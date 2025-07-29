@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+body{
+    
+}
+
+.navbar{
+    background-color: #bdbaba;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 0 2px;
+    height: 70px;
+}
+
+.headName{
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.login-btn {
+    border: 2px solid rgb(253, 73, 8);
+    background-color: transparent;
+    color: whitesmoke;
+    padding: 8px 20px;
+    border-radius: 5px;
+  }
+
+  .login-btn:hover {
+    background-color: rgb(253, 73, 8);
+    color: white;
+    
+  }
+
+.nav-item{
+    font-family:'Roboto Slab', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+
+
+/*responsiveness for navbar*/
+@media (max-width: 768px) {
+    /* For small screens and below */
+    .navbar{
+        background-color: #bdbaba;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        margin: 10px 15px 0 15px;
+        padding: 0 2px;
+        height: 50px;
+    }
+
+    .carousel-caption h1{
+        margin-top: 50px;
+    }
+
+  }
+  
+  @media (min-width: 992px) {
+    /* For large screens and up */
+    .sidebar{
+        backdrop-filter: blur(30px);
+    }
+    .navbar{
+        border-radius: 70px;
+        margin: 5px 20px 0 20px;
+        padding: 0;
+    }
+  }
+
+/* Carousel */
+.c-item {
+    height: 70vh;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+  }
+
+  .Carousel .carousel-controls{
+	position: absolute;
+	left: 50%;
+	bottom: 10px;
+	z-index: 10;
+	transform: translateX(-50%);
+    }
+
+.Carousel .carousel-indicators{
+	position: relative;
+	margin: 0;
+    }
+
+.Carousel .carousel-indicators li{
+	height: 70px;
+	width: 70px;
+	margin: 0 5px;
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+	border:3px solid transparent;
+	transition: all 0.3s ease;
+}
+.Carousel .carousel-indicators li.active{
+	border-color: #ffffff;
+	transform: scale(1.2);
+}
+
+.carousel-caption{
+    margin-bottom: 200px;
+}
+
+
+/*responsiveness for Carousel*/
+@media (max-width: 768px) {
+    /* For small screens and below */
+    .Carousel .carousel-indicators li{
+        height: 30px;
+        width: 30px;
+    }
+
+    .Eco{
+        margin-bottom: 130px;
+        margin-top: 60px;
+    }
+
+  }
+  
+  @media (min-width: 992px) {
+    /* For large screens and up */
+    .Carousel .carousel-indicators li{
+        height: 30px;
+        width: 30px;
+    }
+
+
+
+    .Carousel{
+        height: 70vh;
+    }
+
+    .carousel-caption{
+        margin-bottom: 100px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* Larger screens */
+    .TextDAM{
+        margin-bottom: 200px;
+    }
+
+    .Agric{
+        margin-bottom: 30px;
+    }
+
+    .pDAM{
+        font-size: x-large;
+    }
+
+    .TextDAM{
+        margin-bottom: 30px;
+    }
+
+
+  }
+
+/* main */
+
+
+/*responsiveness template*/
+@media (max-width: 768px) {
+    /* For small screens and below */
+  }
+  
+  @media (min-width: 992px) {
+    /* For large screens and up */
+  }
+  
+
+/* Footer */
+
+.content{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer{
+    background-color: #bdbaba;
+    padding: 50px 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.col{
+    width: 25%;
+    padding: 0 30px;
+}
+
+.col h4{
+   font-size: 17px;
+   text-transform: capitalize;
+   color: black;
+   margin-bottom: 25px;
+   position: relative;
+}
+
+.footerMis{
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+
+.footerDAM{
+    text-decoration: none;
+    color: black;
+}
+
+.col h5{
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    margin-bottom: 25px;
+    position: relative;
+ }
+
+ .col p{
+   font-size: 12px;
+   text-transform: capitalize;
+   color: black;
+   margin-bottom: 20px;
+   position: relative;
+}
+
+.logoTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col h4::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 40px;
+    left: 0;
+    bottom: -5px;
+    background-color: #f72b07;
+ }
+
+.col > .fsertou::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 98px;
+    left: 0;
+    bottom: -5px;
+    background-color: #f72b07;
+ }
+
+.col ul li:not(last-child){
+    margin-bottom: 15px;
+}
+
+.col ul li a{
+    color: #0b0b0a;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    display: block;
+    transition: -4s;
+}
+
+.col ul li a:hover{
+    color: rgb(35, 34, 34);
+    transform: translateX(-10px);
+}
+
+.col .social a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #cca45d;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 12px 12px 0;
+    color: black;
+    border-radius: 50%;
+    transition: -4s;
+}
+
+.col .social a:hover{
+    transform: scale(1.2);
+    color: white;
+    background-color: black;
+}
+
+
+@media (max-width: 768px) {
+    /* For small screens and below */
+    .col{
+        width: 50%;
+        margin-bottom: 25px;
+        margin-left: 10px;
+    }
+    .col h4{
+        font-size: small;
+    }
+    .footerDAM{
+        font-size: small;
+    }
+
+    .footerMisP{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 0;
+        top: 0;
+    }
+    
+    .footerMis{
+        margin-bottom: 0;
+        padding: 0;
+       
+    }
+
+}
+  
+  @media (min-width: 992px) {
+    /* For large screens and up */
+    .col{
+        width: 100%;
+    }
+
+  }
+
+
